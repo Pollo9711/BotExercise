@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5/rZSpHoCVoajv7dwvBDZzhg+5mlo9lA8zH1taQXsbjOivFRMgKBJD35u3Nt/I56K5woqn3WygdUkvAtkvu5ow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andre\\Git\\BotExercise\\BotExercise\\BotExercise.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\telegram.bot\\17.0.0\\telegram.bot.17.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
