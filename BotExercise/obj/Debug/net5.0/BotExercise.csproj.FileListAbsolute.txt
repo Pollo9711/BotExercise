@@ -17,3 +17,4 @@ C:\Users\andre\Git\BotExercise\BotExercise\obj\Debug\net5.0\BotExercise.dll
 C:\Users\andre\Git\BotExercise\BotExercise\obj\Debug\net5.0\ref\BotExercise.dll
 C:\Users\andre\Git\BotExercise\BotExercise\obj\Debug\net5.0\BotExercise.pdb
 C:\Users\andre\Git\BotExercise\BotExercise\obj\Debug\net5.0\BotExercise.genruntimeconfig.cache
+C:\Users\andre\Git\BotExercise\BotExercise\bin\Debug\net5.0\System.ServiceModel.Syndication.dll
