@@ -10,16 +10,22 @@ using System.Threading.Tasks;
 using System.Xml;
 using Telegram.Bot;
 using Telegram.Bot.Types;
+using Telegram.Bot.Types.Enums;
 
 namespace BotExercise
 {
     public class Program
     {
-        public static TelegramBotClient botClient;
 
-        static void Main(string[] args)
+        public static TelegramBotClient BotClient;
+
+        public static Update update;
+
+        static async Task Main(string[] args)
         {
             var url = "https://www.ansa.it/sito/notizie/mondo/mondo_rss.xml";
+
+            BotClient = new TelegramBotClient("5195273815:AAFGqS7fRNLpkuzJ9fD2uQMbM4MUqykRFa8");
 
             using var reader = XmlReader.Create(url);
 
@@ -41,13 +47,13 @@ namespace BotExercise
                 newString += lists.title + " " + lists.publishDate + " " + lists.link + "\n";
             }
 
-            //Console.WriteLine(newString);
+            var message = update.Message;
 
-            botClient = new TelegramBotClient("5266813309:AAHOOC0zxmCyU-eJJA5Zf_31yYFIHnmgz6A");
+            Console.WriteLine(newString);
 
-            var me = botClient.GetMeAsync().Result;
+            var me = BotClient.GetMeAsync().Result;
 
-            botClient.SendTextMessageAsync(chatId: me.Id, text: newString);
+            await BotClient.SendTextMessageAsync(message.Chat.Id, message.Text);
         }
     }
 }
