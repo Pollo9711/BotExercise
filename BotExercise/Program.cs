@@ -50,10 +50,18 @@ namespace BotExercise
                 newString += lists.title + " " + lists.publishDate + " " + lists.link + "\n";
             }
 
+<<<<<<< HEAD
             Console.WriteLine(newString);
 
-        }
+=======
+            var message = update.Message;
 
-        
+            Console.WriteLine(newString);
+
+            var me = BotClient.GetMeAsync().Result;
+
+            await BotClient.SendTextMessageAsync(message.Chat.Id, message.Text);
+>>>>>>> 5388a06742e0d01c5103e5837cfd8185729a4a69
+        }
     }
 }
