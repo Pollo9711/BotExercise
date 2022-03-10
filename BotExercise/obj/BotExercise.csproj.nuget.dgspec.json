@@ -1,27 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\Git\\BotExercise\\BotExercise\\BotExercise.csproj": {}
+    "D:\\GitRepos\\BotExercise\\BotExercise\\BotExercise.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\Git\\BotExercise\\BotExercise\\BotExercise.csproj": {
+    "D:\\GitRepos\\BotExercise\\BotExercise\\BotExercise.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\Git\\BotExercise\\BotExercise\\BotExercise.csproj",
+        "projectUniqueName": "D:\\GitRepos\\BotExercise\\BotExercise\\BotExercise.csproj",
         "projectName": "BotExercise",
-        "projectPath": "C:\\Users\\andre\\Git\\BotExercise\\BotExercise\\BotExercise.csproj",
-        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\Git\\BotExercise\\BotExercise\\obj\\",
+        "projectPath": "D:\\GitRepos\\BotExercise\\BotExercise\\BotExercise.csproj",
+        "packagesPath": "C:\\Users\\Abominion\\.nuget\\packages\\",
+        "outputPath": "D:\\GitRepos\\BotExercise\\BotExercise\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Abominion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -46,6 +43,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Google.Cloud.Functions.Framework": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
