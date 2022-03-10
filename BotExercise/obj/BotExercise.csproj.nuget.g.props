@@ -14,6 +14,6 @@
     <SourceRoot Include="C:\Program Files\dotnet\sdk\NuGetFallbackFolder\" />
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\6.0.1\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props" Condition="Exists('$(NuGetPackageRoot)microsoft.extensions.configuration.usersecrets\6.0.1\buildTransitive\netstandard2.0\Microsoft.Extensions.Configuration.UserSecrets.props')" />
+    <Import Project="$(NuGetPackageRoot)google.cloud.functions.hosting\1.0.0\build\netcoreapp3.1\Google.Cloud.Functions.Hosting.props" Condition="Exists('$(NuGetPackageRoot)google.cloud.functions.hosting\1.0.0\build\netcoreapp3.1\Google.Cloud.Functions.Hosting.props')" />
   </ImportGroup>
 </Project>
