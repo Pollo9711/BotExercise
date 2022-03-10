@@ -100,7 +100,7 @@ namespace BotExercise
                 if(messageElement.TryGetProperty("chat", out JsonElement chatElement)
                     && chatElement.ValueKind == JsonValueKind.Number)
                 {
-                    message.Chat.Id = chatElement.GetInt64();
+                    message.Chat = new Chat() { Id = chatElement.GetInt64() };
                 }
             }
 
