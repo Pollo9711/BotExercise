@@ -79,7 +79,7 @@ namespace BotExercise
             }
             catch (Exception exception)
             {
-                _logger.LogError(exception.Message, exception);
+                _logger.LogError(exception.StackTrace, exception);
             }      
         }
 
@@ -97,10 +97,13 @@ namespace BotExercise
                     message.Text = textElement.GetString();
                 }
 
-                if(messageElement.TryGetProperty("chat", out JsonElement chatElement)
-                    && chatElement.ValueKind == JsonValueKind.Number)
+                if(messageElement.TryGetProperty("chat", out JsonElement chatElement))
                 {
-                    message.Chat = new Chat() { Id = chatElement.GetInt64() };
+                    if (chatElement.TryGetProperty("id", out JsonElement idElement))
+                    {
+                        message.Chat = new Chat() { Id = idElement.GetInt64() };
+                    }
+                    
                 }
             }
 
